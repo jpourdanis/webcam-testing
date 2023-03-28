@@ -33,5 +33,11 @@ In our case we will use the public website [https://webcamtests.com/](https://we
 
 ### RESULT
 
+Screenshot of the Web Camera recording frame:
+
+![Screenshot](https://github.com/jpourdanis/webcam-testing/blob/main/cypress/screenshots/webcam.cy.js/A%20sample%20to%20test%20a%20webcamera%20on%20ci%20--%20should%20take%20screenshot%20of%20web%20recording.png)
+
+Short video with execution:
+
 ![Webcam E2E Test](webcam.cy.js.gif)
 
