@@ -14,7 +14,7 @@ We need something that simulates the camera access and produce actual stream of 
 
 ### THE SOLUTION
 
-On chronium based browsers you can add some arguments that will do this job for you :
+On chromium based browsers you can add some arguments that will do this job for you :
 
 - `--use-fake-ui-for-media-stream` avoids the need to grant camera/microphone permissions.
 - `--use-fake-device-for-media-stream` feeds a test pattern to `getUserMedia()` instead of live camera input.
