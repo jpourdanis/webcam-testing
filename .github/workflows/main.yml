@@ -1,0 +1,25 @@
+name: Cypress Web Tests
+on: [push]
+jobs:
+  cypress-run-web-tests:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Cypress run Web Tests
+        uses: cypress-io/github-action@v4
+        with:
+          record: true
+        env:
+          CYPRESS_BASE_URL: https://webcamtests.com/
+      - name: Upload recording videos
+        uses: actions/upload-artifact@v2
+        if: always()
+        with:
+          name: cypress-videos
+          path: cypress/videos
+      - uses: actions/upload-artifact@v2
+        if: always()
+        with:
+          name: cypress-screenshots
+          path: cypress/screenshots

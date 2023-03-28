@@ -1,0 +1,22 @@
+{
+  "name": "webcam-testing",
+  "version": "1.0.0",
+  "description": "A sample for testing webcamera with cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jpourdanis/webcam-testing.git"
+  },
+  "author": "John Pourdanis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jpourdanis/webcam-testing/issues"
+  },
+  "homepage": "https://github.com/jpourdanis/webcam-testing#readme",
+  "devDependencies": {
+    "cypress": "^12.8.1"
+  }
+}
