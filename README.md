@@ -27,9 +27,10 @@ In our case we will use the public website [https://webcamtests.com/](https://we
 ### RUN TESTS
 
 1. Clone this repository
-2. Run `cd webcam-testing` to command line to access the folder
+2. Run `cd webcam-testing/` to command line to access the folder
 3. Run `npm install`
 4. Run `npx cypress open`
+5. Select `webcam.cy.js` and press run on cypress runner
 
 ### RESULT
 
