@@ -10,5 +10,5 @@ An example of how you can solve the problem of web camera recording testing with
 4. Run `npx cypress open`
 
 Example: 
-![Webcam Test](cypress/videos/webcam.cy.js.mp4)
+![Webcam E2E Test](webcam.cy.js.gif)
 
