@@ -2,6 +2,28 @@
 
 An example of how you can solve the problem of web camera recording testing with Cypress
 
+### THE PROBLEM
+
+When you want to automate clicks and inputs things are straight forward in the test automation world.
+
+What's happening when you want to simulate access to camera and simulate the Web Camera recording process for your test?
+
+It's obvious that if you want to run a test on your local machine you can use the Web Camera of the machine BUT how this test will run on CI?
+
+We need something that simulates the camera access and produce actual stream of video.
+
+### THE SOLUTION
+
+On chronium based browsers you can add some arguments that will do this job for you :
+
+- `--use-fake-ui-for-media-stream` avoids the need to grant camera/microphone permissions.
+- `--use-fake-device-for-media-stream` feeds a test pattern to `getUserMedia()` instead of live camera input.
+
+You can also use another argument to feed the camera your video :
+- `--use-file-for-fake-video-capture=path/to/video`
+
+In our case we will use the public website [https://webcamtests.com/](https://webcamtests.com/) to run it on GitHub Actions and we will get as artifacts the video and the screenshot of the test.
+
 ### RUN TESTS
 
 1. Clone this repository
@@ -9,6 +31,7 @@ An example of how you can solve the problem of web camera recording testing with
 3. Run `npm install`
 4. Run `npx cypress open`
 
-Example: 
+### RESULT
+
 ![Webcam E2E Test](webcam.cy.js.gif)
 
