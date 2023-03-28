@@ -12,6 +12,7 @@ jobs:
           record: true
         env:
           CYPRESS_BASE_URL: https://webcamtests.com/
+          CYPRESS_RECORD_KEY: foobar
       - name: Upload recording videos
         uses: actions/upload-artifact@v2
         if: always()
